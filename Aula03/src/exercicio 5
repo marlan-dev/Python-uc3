@@ -1,0 +1,25 @@
+def menu():
+    contador = 0
+    opcao = ''
+
+    while opcao != '3':
+        print("\n=== MENU ===")
+        print("1 - Opção 1")
+        print("2 - Opção 2")
+        print("3 - Sair")
+        
+        opcao = input("Digite a opção desejada: ")
+        
+        if opcao == '1':
+            print("Você escolheu a Opção 1.")
+            contador += 1
+        elif opcao == '2':
+            print("Você escolheu a Opção 2.")
+            contador += 1
+        elif opcao == '3':
+            print("Saindo do programa...")
+        else:
+            print("Opção inválida. Tente novamente.")
+    print(f"\nVocê interagiu {contador} vezes antes de sair.")
+
+menu()

@@ -1,0 +1,33 @@
+tamanho = int(input("informe o tamanho: "))
+
+def imprimir_quadrado(tamanho):
+    for _ in range(tamanho):
+        print('*' * tamanho)
+
+imprimir_quadrado(tamanho)
+
+
+def imprimir_quadrado2(tamanho):
+    meio = tamanho // 2
+    for _ in range(tamanho):
+        linha=""
+        for j in range(tamanho):
+            if _ == meio and j == meio:
+                linha += ' '
+            else:
+                linha += '*'
+        print(linha)
+imprimir_quadrado2(tamanho)
+
+
+def imprimir_quadrado3(tamanho):
+    altura = tamanho // 2
+    for _ in range(altura + _):
+        espacos = ' ' * (altura - _)
+        asteristicos = '*' * (2*_+1)
+        print(espacos + asteristicos + espacos)
+
+
+imprimir_quadrado3(tamanho)
+
+

@@ -1,0 +1,12 @@
+def fibonacci(termos):
+    termos = int(input('Informe quantos termos deseja:  '))
+
+    lista=[]
+    a,b = 0, 1
+    while len(lista) < termos:
+        lista.append(a)
+        a, b = b, a+b
+    print(lista)
+
+
+

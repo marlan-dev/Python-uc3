@@ -1,0 +1,12 @@
+inicial = int(input("informe o valor inicial: "))
+final = int(input("informe o valor final: "))
+
+def imprimir_numeros():
+
+    for numeros in range (inicial, final):
+        print(f"{numeros}")
+
+
+
+
+imprimir_numeros(inicial, final)

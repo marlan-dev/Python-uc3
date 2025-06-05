@@ -1,0 +1,14 @@
+import time
+
+numero=int(input(" Digite um número para a contagem: "))
+
+def contador(numero):
+    while True:
+        numero>=0
+        print(f"{numero}")
+        time.sleep(1)
+        numero -= 1
+        if numero == -1:
+            break
+   
+contador(numero)
